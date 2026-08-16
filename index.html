@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POCHI BOX（ポチボックス）｜ポチッと、すぐ遊ぼ。</title>
+  <meta name="description" content="インストールもログインも不要。スマホですぐ遊べる、楽しいミニゲームのポータルサイトです。">
+  <meta name="theme-color" content="#fff9e9">
+  <meta property="og:title" content="POCHI BOX｜ポチッと、すぐ遊ぼ。">
+  <meta property="og:description" content="インストール不要・ログイン不要。スマホですぐ遊べるミニゲームの箱。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://a04sb025-ai.github.io/pochi-box/">
+  <meta property="og:image" content="https://a04sb025-ai.github.io/pochi-box/og-image.svg">
+  <meta property="og:locale" content="ja_JP">
+  <link rel="canonical" href="https://a04sb025-ai.github.io/pochi-box/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="games.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="POCHI BOX ホーム">
+      <span class="brand-box" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><b>POCHI BOX</b><small>ポチッと、すぐ遊ぼ。</small></span>
+    </a>
+    <button class="random-button" id="random-game" type="button"><span aria-hidden="true">🎲</span> おまかせ</button>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">MINI GAME PORTAL</p>
+        <h1 id="intro-title">今日は、<br><em>なにして遊ぶ？</em></h1>
+        <p class="intro-copy">インストールもログインもなし。<br>気になるゲームをポチッとするだけ。</p>
+      </div>
+      <div class="box-illustration" aria-hidden="true">
+        <span class="piece piece-one"></span><span class="piece piece-two"></span><span class="piece piece-three">★</span>
+        <div class="open-box"><span></span></div>
+      </div>
+    </section>
+
+    <section class="games-section" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div><span class="heading-mark">NEW</span><h2 id="games-title">新着ゲーム</h2></div>
+        <span id="result-count" aria-live="polite"></span>
+      </div>
+
+      <div class="tools">
+        <label class="search"><span aria-hidden="true">⌕</span><span class="sr-only">ゲームを検索</span><input id="game-search" type="search" placeholder="ゲームをさがす" autocomplete="off"></label>
+        <div class="filters" id="genre-filters" aria-label="ジャンルで絞り込む"></div>
+      </div>
+
+      <div class="game-grid" id="game-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><span>📦</span><p>ゲームが見つかりませんでした。</p><button type="button" id="clear-search">すべて見る</button></div>
+    </section>
+
+    <section class="recent-section" id="recent-section" aria-labelledby="recent-title" hidden>
+      <div class="section-heading"><div><span class="heading-mark peach">HISTORY</span><h2 id="recent-title">最近遊んだゲーム</h2></div></div>
+      <div class="recent-list" id="recent-list"></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-logo">POCHI BOX <span aria-hidden="true">■ ● ▲</span></div><p>ひまな時間に、小さなワクワクを。</p><small>© 2026 POCHI BOX</small></footer>
+</body>
+</html>
