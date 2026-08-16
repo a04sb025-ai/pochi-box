@@ -1,6 +1,17 @@
 /* ゲームを追加・編集するときは、この配列だけを変更してください。 */
 window.POCHI_GAMES = [
   {
+    id: "pochi-army",
+    title: "ポチ軍団",
+    url: "https://a04sb025-ai.github.io/pochi-army/",
+    description: "集めて、増やして、巨大ボスをぶっ飛ばせ！",
+    genre: "アクション",
+    publishedAt: "2026-08-16",
+    isNew: true,
+    featured: true,
+    visual: "army"
+  },
+  {
     id: "falling-blocks",
     title: "落ち物ブロックパズル",
     url: "https://a04sb025-ai.github.io/tetris/",
@@ -8,7 +19,7 @@ window.POCHI_GAMES = [
     genre: "パズル",
     publishedAt: "2026-08-16",
     isNew: true,
-    featured: true,
+    featured: false,
     visual: "blocks"
   },
   {
